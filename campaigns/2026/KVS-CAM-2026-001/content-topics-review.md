@@ -4,7 +4,7 @@
 
 ## Review status
 
-- [ ] KVS-VID-006 — Đi ngang → đèn hoặc buzzer bật
+- [x] KVS-VID-006 — Đi ngang → đèn hoặc buzzer bật
   - Hook: “Chỉ cần đi ngang qua đây, chuyện gì xảy ra?”
   - Visual: người đi qua → PIR detect → relay/buzzer chạy.
   - Mục tiêu: demo trực quan, không cần giải thích nhiều.
