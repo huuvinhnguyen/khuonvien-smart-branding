@@ -70,11 +70,27 @@
   - Mục tiêu: brand explainer / video ghim.
   - Ưu tiên: Rất cao.
 
+- [x] KVS-VID-016 — Điều khiển bóng đèn bằng Wi‑Fi
+  - Status: SCHEDULED.
+  - Flow: Command → Wi‑Fi → ESP → Relay → Light.
+
+- [x] KVS-VID-017 — Bật đèn bằng điện thoại
+  - Hook: “Bóng đèn này, mình có thể bật ngay trên điện thoại.”
+  - Visual: iPhone/KhuonVien app → Switch ON/OFF → bóng đèn thật.
+  - Message: Mobile → Switch → Light.
+  - Mục tiêu: chứng minh trải nghiệm mobile điều khiển thiết bị thật.
+  - Status: READY FOR PRODUCTION.
+  - Ưu tiên: Rất cao.
+
+- [ ] KVS-VID-018 — Khi bấm ON trên app, phía sau xảy ra chuyện gì?
+  - Flow dự kiến: Mobile → API → Backend → MQTT → Switch.
+  - Mục tiêu: technical follow-up cho KVS-VID-017.
+
 ## Suggested first batch
 
 Đề xuất duyệt và sản xuất trước:
 
-- [ ] KVS-VID-006 — Demo trực quan
+- [ ] KVS-VID-006 — Demo trực quan — PAUSED / HOLD
 - [ ] KVS-VID-008 — Một sensor → nhiều action
 - [ ] KVS-VID-011 — Automation theo lịch
 - [ ] KVS-VID-015 — Brand explainer
