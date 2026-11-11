@@ -1,4 +1,4 @@
-# KVS-VID-017 — Bật đèn bằng điện thoại
+# KVS-VID-017 — Điều khiển switch thật từ app KhuonVien iOS / Flutter
 
 ## Status
 READY FOR PRODUCTION
@@ -7,17 +7,18 @@ READY FOR PRODUCTION
 KVS-CAM-2026-001 — Build KhuonVien Smart in Public
 
 ## Goal
-Chứng minh trực quan app mobile KhuonVien có thể điều khiển switch và làm bóng đèn thật ON/OFF.
+Chứng minh trực quan app mobile KhuonVien trên **iOS và Flutter** có thể điều khiển switch và làm bóng đèn thật ON/OFF.
 
 ## Core message
-**Mobile → Switch → Light**
+**App → API → Device → Relay → Light**
 
-Không đi sâu API/MQTT trong video này. Technical follow-up dành cho KVS-VID-018.
+Video ưu tiên proof-of-action và UX thật. Không đi sâu backend/MQTT trong video này; technical follow-up dành cho KVS-VID-018.
 
 ## Target
-- 25–30 giây
+- 25–35 giây
 - Vertical 9:16
 - Reels / TikTok / YouTube Shorts
+- Proof chính: iOS ON/OFF thiết bị thật; bổ sung Flutter cross-platform proof
 
 ## Voice-over V1
 
@@ -105,3 +106,229 @@ Dự kiến: Mobile → API → Backend → MQTT → Switch.
 - [ ] Đặt tên `KVS-VID-017_A_proof_01.mp4`, `KVS-VID-017_B_app_01.mp4`, `KVS-VID-017_C_device_01.mp4`.
 - [ ] Tải file lên thư mục media chiến dịch trên Drive; dán link vào task ClickUp KVS-VID-017.
 - [ ] Chỉ chuyển Production → Editor khi proof shot đã đạt; nếu lỗi Wi-Fi/relay thì ghi rõ và quay lại, không giả lập kết quả.
+
+
+---
+
+# Script / EDL V3 — iOS + Flutter cross-platform proof (2026-11-12)
+
+## Hook
+**“App tự làm có điều khiển được thiết bị thật không?”**
+
+## 0:00–0:03 — Hook / Proof first
+
+**Visual**
+- Cùng khung hình có điện thoại và bóng đèn/relay thật.
+- Bóng đèn đang OFF.
+- Tay chuẩn bị chạm ON trên app.
+
+**VO**
+“App tự làm có điều khiển được thiết bị thật không?”
+
+**On-screen**
+`App → thiết bị thật?`
+
+**Edit note**
+- Không mở đầu bằng logo, terminal hoặc code.
+- 3 giây đầu phải thấy được cả app và thiết bị thật.
+
+## 0:03–0:08 — KhuonVien iOS
+
+**Visual**
+- Close-up app KhuonVien trên iPhone.
+- Mở màn hình switch/device.
+- Label nhỏ: `iOS`.
+
+**VO**
+“Đây là app KhuonVien mình đang phát triển trên iOS.”
+
+**On-screen**
+`KhuonVien iOS`
+
+## 0:08–0:14 — ON → real action
+
+**Visual**
+- Shot liên tục thấy tay chạm ON và bóng đèn.
+- Relay/đèn phản ứng thật.
+- Giữ nguyên timing thực tế.
+
+**VO**
+“Mình bật switch trên app, lệnh được gửi tới thiết bị và relay bật bóng đèn.”
+
+**On-screen**
+`App → API → Device → Relay ON`
+
+**Audio**
+- Giữ tiếng relay click nếu thu được.
+- Duck nhạc nền đúng khoảnh khắc action.
+
+**Edit note**
+- Đây là proof shot quan trọng nhất.
+- Không speed-up hoặc cắt che latency.
+
+## 0:14–0:19 — OFF → verify control
+
+**Visual**
+- Chạm OFF.
+- Bóng đèn tắt.
+- Có thể thêm close-up relay/device.
+
+**VO**
+“Bấm OFF, thiết bị nhận lệnh và bóng đèn tắt.”
+
+**On-screen**
+`OFF → Device → Light OFF`
+
+## 0:19–0:25 — Flutter proof
+
+**Visual**
+- Chuyển sang app Flutter trên Android/thiết bị thật.
+- Show cùng switch.
+- Thực hiện một action ngắn ON hoặc OFF.
+- Match cut vị trí nút switch nếu dựng được.
+
+**VO**
+“Cùng flow này hiện cũng đã chạy được trên phiên bản Flutter.”
+
+**On-screen**
+`iOS ✅   Flutter ✅`
+
+**Edit note**
+- Chỉ dùng câu này khi Flutter đã verify physical action.
+- Nếu mới verify UI thì đổi VO thành: “Cùng flow này đang được triển khai trên Flutter.”
+
+## 0:25–0:31 — Brand value
+
+**Visual**
+- Wide shot điện thoại + switch/ESP/relay + bóng đèn.
+- Overlay flow tối giản.
+
+**VO**
+“Đây là cách mình đang xây KhuonVien: kết nối phần mềm với những hành động thật quanh nhà và khu vườn.”
+
+**On-screen**
+`Software → Real-world action`
+
+**End card**
+`KhuonVien — Build in Public`
+
+## 0:31–0:34 — Optional CTA
+
+**On-screen**
+`Tiếp theo: app → nhiều thiết bị?`
+
+**VO**
+“Video sau mình thử điều khiển nhiều thiết bị từ cùng một app.”
+
+---
+
+# Full Voice-over V3
+
+“App tự làm có điều khiển được thiết bị thật không?
+
+Đây là app KhuonVien mình đang phát triển trên iOS.
+
+Mình bật switch trên app, lệnh được gửi tới thiết bị và relay bật bóng đèn.
+
+Bấm OFF, thiết bị nhận lệnh và bóng đèn tắt.
+
+Cùng flow này hiện cũng đã chạy được trên phiên bản Flutter.
+
+Đây là cách mình đang xây KhuonVien: kết nối phần mềm với những hành động thật quanh nhà và khu vườn.”
+
+---
+
+# Subtitle copy V3
+
+1. App tự làm có điều khiển được thiết bị thật không?
+2. Đây là app KhuonVien trên iOS.
+3. Bật switch trên app.
+4. Lệnh được gửi tới thiết bị.
+5. Relay bật bóng đèn thật.
+6. Bấm OFF → bóng đèn tắt.
+7. iOS ✅ Flutter ✅
+8. KhuonVien: Software → Real-world action.
+
+---
+
+# Production shot list V3
+
+## Must-have
+1. Wide shot có cả điện thoại và bóng đèn/thiết bị thật.
+2. Close-up app KhuonVien iOS.
+3. Một take liên tục: iOS tap ON → đèn sáng thật.
+4. Một take liên tục: iOS tap OFF → đèn tắt thật.
+5. Flutter/Android shot cùng switch.
+6. Một physical action được trigger từ Flutter nếu đã verify.
+7. End shot toàn hệ thống: app + device + relay/light.
+8. Screen recording iOS và Flutter nếu có.
+
+## Nice-to-have
+9. Close-up relay click.
+10. ESP/switch device LED phản ứng.
+11. Split-screen app / physical light.
+12. Backend/API log thật tối đa 0.5–1 giây.
+13. Match cut iOS ↔ Flutter trên cùng nút switch.
+
+---
+
+# Editor notes V3
+
+## Pace
+- 0:00–0:03: hook nhanh.
+- 0:03–0:08: app context.
+- 0:08–0:19: payoff ON/OFF.
+- 0:19–0:25: cross-platform proof.
+- 0:25–0:31: brand value.
+- CTA tối đa 2–3 giây nếu cần.
+
+## Priority
+Proof shot quan trọng hơn screen recording hoặc code. Người xem phải thấy **tap trên app → thiết bị thật đổi trạng thái**.
+
+## Technical guardrails
+- Chỉ claim iOS/Flutter đã điều khiển thiết bị thật nếu đã verify physical action.
+- Không claim “instant”, “real-time”, “zero latency” nếu chưa benchmark.
+- Không speed-up footage để che latency.
+- Không claim local control nếu flow thực tế đi qua backend/API/MQTT.
+- Mô tả trung tính: “lệnh được gửi tới thiết bị” khi không cần giải thích transport.
+- Không để token, JWT, IP, Wi-Fi password hoặc dữ liệu nhạy cảm xuất hiện.
+
+---
+
+# Suggested caption V3
+
+Từ app KhuonVien trên iOS, mình đã có thể bật/tắt một switch thật và thấy relay điều khiển bóng đèn ngoài đời.
+
+Điểm mình muốn chứng minh ở video này không phải giao diện đẹp đến đâu, mà là flow thật:
+
+`App → API → Device → Relay → Light`
+
+Cùng chức năng cũng đã chạy trên Flutter.
+
+Mình đang build KhuonVien theo hướng từng bước kết nối phần mềm với những việc thật quanh nhà và khu vườn.
+
+#KhuonVien #IoT #iOS #Flutter #ESP32 #Automation #SmartHome #BuildInPublic
+
+---
+
+# Cover V3
+
+**BẤM TRÊN APP  
+ĐÈN BẬT THẬT?**
+
+Small label:
+`iOS + Flutter → Switch`
+
+---
+
+# Handoff V3
+
+**Next owner: Production**
+
+Production cần bàn giao:
+1. iOS ON → đèn bật thật.
+2. iOS OFF → đèn tắt thật.
+3. Flutter điều khiển cùng switch trên thiết bị thật.
+4. Wide shot app + thiết bị trong cùng context.
+5. Screen recordings nếu có.
+6. Raw footage giữ nguyên timing để Reviewer kiểm tra action thật.
