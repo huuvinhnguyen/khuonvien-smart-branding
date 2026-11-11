@@ -74,3 +74,34 @@ Shot 0:07–0:14 là proof shot quan trọng nhất. Không speed-up để giả
 **KVS-VID-018 — Khi bấm ON trên app, phía sau thực sự xảy ra chuyện gì?**
 
 Dự kiến: Mobile → API → Backend → MQTT → Switch.
+
+
+## Hướng dẫn quay thực tế — V2 (2026-11-11)
+
+### Chuẩn bị trước khi bấm quay (5–10 phút)
+- iPhone đã đăng nhập app KhuonVien, mở đúng Switch/relay có thể bật tắt bóng đèn thử nghiệm.
+- Bóng đèn, nguồn và thiết bị relay được lắp an toàn trong hộp/đế cách điện; **không chạm dây điện lưới hoặc đấu nối khi đang cấp điện**. Nếu chưa có bộ thử nghiệm an toàn, nhờ người có chuyên môn lắp.
+- Chuẩn bị một điện thoại thứ hai hoặc máy quay để quay cả iPhone và bóng đèn; giá đỡ cố định, ánh sáng đủ thấy màn hình không bị cháy sáng.
+- Kiểm tra Wi-Fi, quyền điều khiển, đèn OFF lúc bắt đầu; thử ON/OFF 2 lần **trước khi quay** để chắc chắn hoạt động.
+- Bật Không làm phiền, giấu thông báo và thông tin cá nhân, chỉnh độ sáng màn hình khoảng 60–80% tùy điều kiện; không lộ IP/token/chip ID nhạy cảm.
+
+### Danh sách cảnh quay theo thứ tự ưu tiên
+1. **Take A — proof shot liên tục, bắt buộc:** Máy quay cố định 9:16, thấy đồng thời màn hình iPhone, ngón tay và bóng đèn. Quay từ khi đèn OFF, giữ 3 giây → chạm ON → đợi đèn sáng thật → giữ 3 giây → chạm OFF → đợi đèn tắt → giữ 3 giây. **Không cắt giữa lúc chạm và lúc đèn đổi trạng thái.** Quay 2–3 take để chọn take rõ nhất.
+2. **Take B — cận cảnh app:** Quay màn hình iPhone từ màn hình Switch, thao tác ON rồi OFF; có thể dùng iOS Screen Recording để dựng xen kẽ. Ẩn thông báo.
+3. **Take C — toàn cảnh thiết bị:** Quay bóng đèn và hộp switch/relay đã được che chắn, 5–7 giây; không mở hộp đang có điện.
+4. **Take D — outro:** Quay app + bóng đèn trong cùng khung 4–5 giây để đặt dòng “KhuonVien — Build in Public”.
+
+### Lời dẫn dễ đọc, 25–30 giây
+- 0–3s: “Bóng đèn này, mình bật được ngay trên điện thoại.”
+- 3–7s: “Đây là công tắc mình đang tích hợp vào ứng dụng KhuonVien.”
+- 7–14s: “Mình bấm bật. Đèn sáng thật.”
+- 14–21s: “Giờ bấm tắt. Đèn cũng tắt theo.”
+- 21–30s: “Từ một thao tác trên điện thoại đến thiết bị ngoài đời. Mình sẽ tiếp tục chia sẻ cách KhuonVien hoạt động.”
+
+### Checklist bàn giao Editor
+- [ ] Có take A liên tục, rõ tay chạm và đèn đổi trạng thái thật.
+- [ ] Có take B màn hình app và take C thiết bị, không lộ thông tin nhạy cảm.
+- [ ] Video gốc dọc 9:16, âm thanh sạch; giữ file gốc, không chỉnh tốc độ proof shot.
+- [ ] Đặt tên `KVS-VID-017_A_proof_01.mp4`, `KVS-VID-017_B_app_01.mp4`, `KVS-VID-017_C_device_01.mp4`.
+- [ ] Tải file lên thư mục media chiến dịch trên Drive; dán link vào task ClickUp KVS-VID-017.
+- [ ] Chỉ chuyển Production → Editor khi proof shot đã đạt; nếu lỗi Wi-Fi/relay thì ghi rõ và quay lại, không giả lập kết quả.
